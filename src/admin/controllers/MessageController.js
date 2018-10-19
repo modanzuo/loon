@@ -20,6 +20,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var _a, _b, _c, _d, _e, _f, _g;
 const loon_1 = require("loon");
 const messageService_1 = require("../../api/services/messageService");
 const Express = require("express");
@@ -75,7 +76,7 @@ __decorate([
     loon_1.Get('/get-time'),
     __param(0, loon_1.Res()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object]),
+    __metadata("design:paramtypes", [typeof (_a = (typeof Express !== "undefined" && Express).Response) === "function" && _a || Object]),
     __metadata("design:returntype", Promise)
 ], MessageController.prototype, "getTime", null);
 __decorate([
@@ -83,28 +84,28 @@ __decorate([
     loon_1.Post('/list'),
     __param(0, loon_1.Res()), __param(1, loon_1.Req()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:paramtypes", [typeof (_b = (typeof Express !== "undefined" && Express).Response) === "function" && _b || Object, typeof (_c = (typeof Express !== "undefined" && Express).Request) === "function" && _c || Object]),
     __metadata("design:returntype", Promise)
 ], MessageController.prototype, "getList", null);
 __decorate([
     loon_1.Post('/add'),
     __param(0, loon_1.Res()), __param(1, loon_1.Req()), __param(2, loon_1.BodyParam('data')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Object, Object]),
+    __metadata("design:paramtypes", [typeof (_d = (typeof Express !== "undefined" && Express).Response) === "function" && _d || Object, typeof (_e = (typeof Express !== "undefined" && Express).Request) === "function" && _e || Object, Object]),
     __metadata("design:returntype", Promise)
 ], MessageController.prototype, "add", null);
 __decorate([
     loon_1.Post('/update'),
     __param(0, loon_1.Res()), __param(1, loon_1.BodyParam('data')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, Object]),
+    __metadata("design:paramtypes", [typeof (_f = (typeof Express !== "undefined" && Express).Response) === "function" && _f || Object, Object]),
     __metadata("design:returntype", Promise)
 ], MessageController.prototype, "update", null);
 __decorate([
     loon_1.Post('/delete'),
     __param(0, loon_1.Res()), __param(1, loon_1.BodyParam('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, String]),
+    __metadata("design:paramtypes", [typeof (_g = (typeof Express !== "undefined" && Express).Response) === "function" && _g || Object, String]),
     __metadata("design:returntype", Promise)
 ], MessageController.prototype, "delete", null);
 MessageController = __decorate([
