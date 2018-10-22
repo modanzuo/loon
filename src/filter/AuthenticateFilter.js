@@ -12,9 +12,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var _a, _b;
 const loon_1 = require("loon");
-const Express = require("Express");
+const Express = require("express");
 const code_1 = require("../../config/code");
 let AuthenticateFilter = class AuthenticateFilter {
     use(data, res, next, token) {
@@ -30,11 +29,10 @@ let AuthenticateFilter = class AuthenticateFilter {
 __decorate([
     __param(0, loon_1.Data()), __param(1, loon_1.Res()), __param(2, loon_1.Next()), __param(3, loon_1.CookieParam('XSession')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, typeof (_a = (typeof Express !== "undefined" && Express).Response) === "function" && _a || Object, typeof (_b = (typeof Express !== "undefined" && Express).NextFunction) === "function" && _b || Object, String]),
+    __metadata("design:paramtypes", [Object, Object, Function, String]),
     __metadata("design:returntype", void 0)
 ], AuthenticateFilter.prototype, "use", null);
 AuthenticateFilter = __decorate([
     loon_1.Filter()
 ], AuthenticateFilter);
 exports.AuthenticateFilter = AuthenticateFilter;
-//# sourceMappingURL=AuthenticateFilter.js.map

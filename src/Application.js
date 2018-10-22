@@ -13,4 +13,3 @@ Application = __decorate([
     loon_1.ApplicationSettings({ rootDir: `${__dirname}/../` })
 ], Application);
 exports.Application = Application;
-//# sourceMappingURL=Application.js.map

@@ -1,5 +1,5 @@
 import {CookieParam, Data, Filter, IMiddleware, Next, Res} from "loon";
-import * as Express from "Express"
+import * as Express from "express"
 import {CODE} from "../../config/code"
 
 @Filter()

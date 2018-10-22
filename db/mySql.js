@@ -97,4 +97,3 @@ module.exports = {
     SINGLE: single,
     EXECUTE: execute
 };
-//# sourceMappingURL=mySql.js.map

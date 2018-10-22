@@ -12,9 +12,8 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var _a;
 const loon_1 = require("loon");
-const Express = require("Express");
+const Express = require("express");
 const code_1 = require("../../config/code");
 let ExceptionHandler = class ExceptionHandler {
     use(err, res) {
@@ -24,10 +23,9 @@ let ExceptionHandler = class ExceptionHandler {
 __decorate([
     __param(0, loon_1.Err()), __param(1, loon_1.Res()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [Object, typeof (_a = (typeof Express !== "undefined" && Express).Response) === "function" && _a || Object]),
+    __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", void 0)
 ], ExceptionHandler.prototype, "use", null);
 ExceptionHandler = __decorate([
     loon_1.ErrorMiddleware()
 ], ExceptionHandler);
-//# sourceMappingURL=ExceptionHandler.js.map

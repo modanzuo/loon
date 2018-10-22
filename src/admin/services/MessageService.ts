@@ -1,7 +1,6 @@
 import {Service} from "loon"
-import {Common} from "../../../public/Common";
+import Common from "../../../public/Common";
 import * as Express from 'express';
-
 
 @Service()
 export class MessageService extends Common {

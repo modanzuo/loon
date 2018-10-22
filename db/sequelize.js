@@ -13,4 +13,3 @@ const sequelize = new Sequelize(dbConfig.NAME, dbConfig.USER, dbConfig.PASS, {
     }
 });
 exports.sequelize = sequelize;
-//# sourceMappingURL=sequelize.js.map

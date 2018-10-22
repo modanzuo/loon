@@ -30,4 +30,3 @@ const CommentModel = sequelize_1.sequelize.define('comment', {
     updatedAt: false
 });
 exports.default = CommentModel;
-//# sourceMappingURL=CommentModel.js.map

@@ -17,7 +17,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const loon_1 = require("loon");
 const common_1 = require("../../../public/common");
 const CommentModel_1 = require("../../../db/models/CommentModel");
-let MessageService = class MessageService extends common_1.Common {
+let MessageService = class MessageService extends common_1.default {
     getTime() {
         return this.getTimeStamp();
     }
@@ -108,4 +108,3 @@ MessageService = __decorate([
     loon_1.Service()
 ], MessageService);
 exports.MessageService = MessageService;
-//# sourceMappingURL=messageService.js.map

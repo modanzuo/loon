@@ -16,4 +16,3 @@ class ApiController {
     }
 }
 exports.ApiController = ApiController;
-//# sourceMappingURL=ApiController.js.map

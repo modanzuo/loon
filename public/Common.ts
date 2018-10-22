@@ -1,11 +1,9 @@
 import * as Express from 'express';
 import * as moment from 'moment';
 
-// const moment = require('moment');
 const mySql = require('../db/mySql');
 
-
-export class Common {
+export default  class Common {
     public mySql = mySql
 
     public getClientIp(req: Express.Request): string {

@@ -10,4 +10,3 @@ const dbConfig = {
     multipleStatements: true //是否允许执行多条sql语句
 };
 module.exports = dbConfig;
-//# sourceMappingURL=db.js.map

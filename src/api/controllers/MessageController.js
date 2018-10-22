@@ -20,7 +20,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var _a, _b, _c, _d, _e, _f;
 const loon_1 = require("loon");
 const messageService_1 = require("../../api/services/messageService");
 const Express = require("express");
@@ -71,7 +70,7 @@ __decorate([
     loon_1.Post('/list'),
     __param(0, loon_1.Res()), __param(1, loon_1.Req()),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [typeof (_a = (typeof Express !== "undefined" && Express).Response) === "function" && _a || Object, typeof (_b = (typeof Express !== "undefined" && Express).Request) === "function" && _b || Object]),
+    __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], MessageController.prototype, "getList", null);
 __decorate([
@@ -79,14 +78,14 @@ __decorate([
     loon_1.Post('/add'),
     __param(0, loon_1.Res()), __param(1, loon_1.Req()), __param(2, loon_1.BodyParam('data')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [typeof (_c = (typeof Express !== "undefined" && Express).Response) === "function" && _c || Object, typeof (_d = (typeof Express !== "undefined" && Express).Request) === "function" && _d || Object, Object]),
+    __metadata("design:paramtypes", [Object, Object, Object]),
     __metadata("design:returntype", Promise)
 ], MessageController.prototype, "add", null);
 __decorate([
     loon_1.Post('/update'),
     __param(0, loon_1.Res()), __param(1, loon_1.BodyParam('data')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [typeof (_e = (typeof Express !== "undefined" && Express).Response) === "function" && _e || Object, Object]),
+    __metadata("design:paramtypes", [Object, Object]),
     __metadata("design:returntype", Promise)
 ], MessageController.prototype, "update", null);
 __decorate([
@@ -94,10 +93,9 @@ __decorate([
     loon_1.Post('/delete'),
     __param(0, loon_1.Res()), __param(1, loon_1.BodyParam('id')),
     __metadata("design:type", Function),
-    __metadata("design:paramtypes", [typeof (_f = (typeof Express !== "undefined" && Express).Response) === "function" && _f || Object, String]),
+    __metadata("design:paramtypes", [Object, String]),
     __metadata("design:returntype", Promise)
 ], MessageController.prototype, "delete", null);
 MessageController = __decorate([
     loon_1.RestController('/api/message')
 ], MessageController);
-//# sourceMappingURL=MessageController.js.map

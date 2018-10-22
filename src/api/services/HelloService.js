@@ -19,4 +19,3 @@ HelloService = __decorate([
     loon_1.Service()
 ], HelloService);
 exports.HelloService = HelloService;
-//# sourceMappingURL=HelloService.js.map

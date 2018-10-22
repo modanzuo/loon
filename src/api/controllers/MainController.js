@@ -13,4 +13,3 @@ MainController = __decorate([
     loon_1.RestController('/main')
 ], MainController);
 exports.MainController = MainController;
-//# sourceMappingURL=MainController.js.map

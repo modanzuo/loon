@@ -5,4 +5,3 @@ exports.CODE = {
     AUTHOR_ERROR: 403,
     ABNORMAL: 400 //服务异常
 };
-//# sourceMappingURL=code.js.map

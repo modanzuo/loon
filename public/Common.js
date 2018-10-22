@@ -1,7 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const moment = require("moment");
-// const moment = require('moment');
 const mySql = require('../db/mySql');
 class Common {
     constructor() {
@@ -34,5 +33,4 @@ class Common {
         return String(time);
     }
 }
-exports.Common = Common;
-//# sourceMappingURL=Common.js.map
+exports.default = Common;

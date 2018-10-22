@@ -16,7 +16,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 Object.defineProperty(exports, "__esModule", { value: true });
 const loon_1 = require("loon");
 const Common_1 = require("../../../public/Common");
-let MessageService = class MessageService extends Common_1.Common {
+let MessageService = class MessageService extends Common_1.default {
     /**
      * @author modanzuo@sina.com
      * @date 2018/9/26
@@ -92,4 +92,3 @@ MessageService = __decorate([
     loon_1.Service()
 ], MessageService);
 exports.MessageService = MessageService;
-//# sourceMappingURL=MessageService.js.map
