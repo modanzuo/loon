@@ -1,5 +1,5 @@
 import {BodyParam, Get, Inject, Post, Req, Res, RestController} from "loon";
-import {MessageService} from "../../api/services/messageService";
+import {MessageService} from "../../api/services/MessageService";
 import * as Express from 'express';
 import {ApiController} from "../../../public/ApiController";
 

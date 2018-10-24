@@ -21,7 +21,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const loon_1 = require("loon");
-const messageService_1 = require("../../api/services/messageService");
+const MessageService_1 = require("../../api/services/MessageService");
 const Express = require("express");
 const ApiController_1 = require("../../../public/ApiController");
 let MessageController = class MessageController extends ApiController_1.ApiController {
@@ -69,7 +69,7 @@ let MessageController = class MessageController extends ApiController_1.ApiContr
 };
 __decorate([
     loon_1.Inject(),
-    __metadata("design:type", messageService_1.MessageService)
+    __metadata("design:type", MessageService_1.MessageService)
 ], MessageController.prototype, "MessageService", void 0);
 __decorate([
     loon_1.Get('/get-time'),
