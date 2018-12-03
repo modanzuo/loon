@@ -1,0 +1,57 @@
+{
+  "dev": true,
+  "dbConfig": {
+    //连接字符集
+    "charset": "UTF8_GENERAL_CI",
+    //最多连接数
+    "LIMIT": 50,
+    //域名
+    "HOST": "localhost",
+    //用户名
+    "USER": "root",
+    //用户密码
+    "PASS": "cai123456",
+    //数据库名
+    "NAME": "my_blog",
+    //数据库名
+    "XCX_NAME": "xcx_lottery",
+    //服务端口
+    "PORT": "3306",
+    //是否允许执行多条sql语句
+    "multipleStatements": true
+  },
+  //日志
+  "log": {
+    "debug": {
+      "level": "debug",
+      "filename": "logs/req_log/",
+      "pattern": "req-yyyy-MM-dd.log",
+      "type": "dateFile",
+      "maxLogSize": 1024,
+      "backups": 3,
+      "alwaysIncludePattern": true
+    },
+    "error": {
+      "level": "error",
+      "filename": "logs/err_log/",
+      "pattern": "err-yyyy-MM-dd.log",
+      "type": "dateFile",
+      "maxLogSize": 1024,
+      "backups": 3,
+      "alwaysIncludePattern": true
+    },
+    "info": {
+      "level": "info",
+      "filename": "logs/oth_log/",
+      "pattern": "oth-yyyy-MM-dd.log",
+      "type": "dateFile",
+      "maxLogSize": 1024,
+      "backups": 3,
+      "alwaysIncludePattern": true
+    }
+  },
+  "weChatConfig": {
+    "appId": "wxf3f7cc51558ef6d3",
+    "AppSecret": "5f0b9410edfb5d352420091f52442324"
+  }
+}

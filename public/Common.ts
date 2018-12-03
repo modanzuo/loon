@@ -1,10 +1,29 @@
 import * as Express from 'express';
 import * as moment from 'moment';
+import * as crypto from 'crypto'
+import {sequelize} from '../db/sequelize'
+import * as  log from '../config/log'
+import {CODE} from "../config/code";
 
-const mySql = require('../db/mySql');
 
-export default  class Common {
-    public mySql = mySql
+export default class Common {
+    public sequelize = sequelize
+    public log = log
+    public CODE = CODE
+
+    public base64Encode(str: string) {
+        return new Buffer(str).toString('base64');
+    }
+
+    public base64Decode(str: string) {
+        return new Buffer(str, 'base64').toString();
+    }
+
+    public getMd5(str: string): string {
+        const md5 = crypto.createHash('md5');
+        str = md5.update(str).digest('hex');
+        return str
+    }
 
     public getClientIp(req: Express.Request): string {
         let ipAddress;
@@ -27,10 +46,13 @@ export default  class Common {
         return userAgent;
     }
 
-    public getTimeStamp(str: string = ''): string {
+    public getTimeStamp(str: string = '', format: string = 'X'): string {
         let time = moment().format('X');
         if (str) {
-            time = moment(str).format('X');
+            str = str.replace(/年/gi, '-')
+            str = str.replace(/月/gi, '-')
+            str = str.replace(/日/gi, '')
+            time = moment(new Date(str)).format(format);
         }
         return String(time);
     }

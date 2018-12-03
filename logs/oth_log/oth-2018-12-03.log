@@ -1,0 +1,41 @@
+[2018-12-03T11:36:01.383] [INFO] oth - Executing (default): SELECT `user_id`, `openid`, `nickname`, `headimg`, `params`, `created_at` FROM `user` AS `user` WHERE `user`.`openid` = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI' LIMIT 1;
+[2018-12-03T11:36:01.385] [INFO] oth - Executing (default): SELECT `user_id` AS `id`, `user_id`, `params`, `created_at`, `update_at` FROM `subscribe` AS `subscribe` WHERE `subscribe`.`user_id` = NULL LIMIT 1;
+[2018-12-03T11:36:21.860] [INFO] oth - Executing (default): SELECT `user_id`, `openid`, `nickname`, `headimg`, `params`, `created_at` FROM `user` AS `user` WHERE `user`.`openid` = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI' LIMIT 1;
+[2018-12-03T11:36:21.862] [INFO] oth - Executing (default): SELECT `user_id` AS `id`, `user_id`, `params`, `created_at`, `update_at` FROM `subscribe` AS `subscribe` WHERE `subscribe`.`user_id` = NULL LIMIT 1;
+[2018-12-03T11:36:21.872] [INFO] oth - Executing (default): INSERT INTO `subscribe` (`user_id`,`params`,`update_at`) VALUES (NULL,'3','1543808181');
+[2018-12-03T11:36:47.249] [INFO] oth - Executing (default): SELECT `user_id`, `openid`, `nickname`, `headimg`, `params`, `created_at` FROM `user` AS `user` WHERE `user`.`openid` = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI' LIMIT 1;
+[2018-12-03T11:36:47.251] [INFO] oth - Executing (default): SELECT `user_id` AS `id`, `user_id`, `params`, `created_at`, `update_at` FROM `subscribe` AS `subscribe` WHERE `subscribe`.`user_id` = NULL LIMIT 1;
+[2018-12-03T11:36:47.261] [INFO] oth - Executing (default): INSERT INTO `subscribe` (`user_id`,`params`,`update_at`) VALUES (NULL,'3','1543808207');
+[2018-12-03T11:48:36.161] [INFO] oth - Executing (default): SELECT  * from  user as  u left join subscribe as sub   on sub.user_id =u.user_id WHERE u.openid = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI'
+[2018-12-03T11:48:36.205] [INFO] oth - Executing (default): SELECT `id`, `open_number`, `open_created`, `open_type`, `open_term`, `open_params`, `created` FROM `open_jackpot` AS `open_jackpot` WHERE `open_jackpot`.`id` = '716';
+[2018-12-03T11:48:37.681] [INFO] oth - Executing (default): SELECT `user_id`, `openid`, `nickname`, `headimg`, `params`, `created_at` FROM `user` AS `user` WHERE `user`.`openid` = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI' LIMIT 1;
+[2018-12-03T11:48:37.682] [INFO] oth - Executing (default): SELECT `user_id` AS `id`, `user_id`, `params`, `created_at`, `update_at` FROM `subscribe` AS `subscribe` WHERE `subscribe`.`user_id` = NULL LIMIT 1;
+[2018-12-03T11:48:37.686] [INFO] oth - Executing (default): INSERT INTO `subscribe` (`user_id`,`params`,`update_at`) VALUES (NULL,'3','1543808917');
+[2018-12-03T13:49:13.587] [INFO] oth - Executing (default): SELECT `user_id`, `openid`, `nickname`, `headimg`, `params`, `created_at` FROM `user` AS `user` WHERE `user`.`openid` = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI' LIMIT 1;
+[2018-12-03T13:49:13.589] [INFO] oth - Executing (default): SELECT `user_id` AS `id`, `user_id`, `params`, `created_at`, `update_at` FROM `subscribe` AS `subscribe` WHERE `subscribe`.`user_id` = NULL LIMIT 1;
+[2018-12-03T13:49:13.601] [INFO] oth - Executing (default): INSERT INTO `subscribe` (`user_id`,`params`,`update_at`) VALUES (NULL,'3','1543816153');
+[2018-12-03T13:50:15.970] [INFO] oth - Executing (default): SELECT `user_id`, `openid`, `nickname`, `headimg`, `params`, `created_at` FROM `user` AS `user` WHERE `user`.`openid` = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI' LIMIT 1;
+[2018-12-03T13:50:15.975] [INFO] oth - Executing (default): SELECT `user_id` AS `id`, `user_id`, `params`, `created_at`, `update_at` FROM `subscribe` AS `subscribe` WHERE `subscribe`.`user_id` = 3 LIMIT 1;
+[2018-12-03T13:50:15.984] [INFO] oth - Executing (default): INSERT INTO `subscribe` (`user_id`,`params`,`update_at`) VALUES (3,'3','1543816215');
+[2018-12-03T13:51:02.788] [INFO] oth - Executing (default): SELECT  * from  user as  u left join subscribe as sub   on sub.user_id =u.user_id WHERE u.openid = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI'
+[2018-12-03T13:51:02.837] [INFO] oth - Executing (default): SELECT `id`, `open_number`, `open_created`, `open_type`, `open_term`, `open_params`, `created` FROM `open_jackpot` AS `open_jackpot` WHERE `open_jackpot`.`id` = '716';
+[2018-12-03T13:55:36.525] [INFO] oth - Executing (default): SELECT  * from  user as  u left join subscribe as sub   on sub.user_id =u.user_id WHERE u.openid = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI'
+[2018-12-03T13:55:37.270] [INFO] oth - Executing (default): SELECT  * from  user as  u left join subscribe as sub   on sub.user_id =u.user_id WHERE u.openid = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI'
+[2018-12-03T13:55:37.319] [INFO] oth - Executing (default): SELECT `id`, `open_number`, `open_created`, `open_type`, `open_term`, `open_params`, `created` FROM `open_jackpot` AS `open_jackpot` WHERE `open_jackpot`.`id` = '716';
+[2018-12-03T13:55:44.123] [INFO] oth - Executing (default): SELECT  * from  user as  u left join subscribe as sub   on sub.user_id =u.user_id WHERE u.openid = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI'
+[2018-12-03T13:55:44.188] [INFO] oth - Executing (default): SELECT `id`, `open_number`, `open_created`, `open_type`, `open_term`, `open_params`, `created` FROM `open_jackpot` AS `open_jackpot` WHERE `open_jackpot`.`id` = '716';
+[2018-12-03T13:55:47.138] [INFO] oth - Executing (default): SELECT  * from  user as  u left join subscribe as sub   on sub.user_id =u.user_id WHERE u.openid = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI'
+[2018-12-03T13:55:47.208] [INFO] oth - Executing (default): SELECT `id`, `open_number`, `open_created`, `open_type`, `open_term`, `open_params`, `created` FROM `open_jackpot` AS `open_jackpot` WHERE `open_jackpot`.`id` = '716';
+[2018-12-03T13:57:14.080] [INFO] oth - Executing (default): SELECT  * from  user as  u left join subscribe as sub   on sub.user_id =u.user_id WHERE u.openid = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI'
+[2018-12-03T13:57:14.106] [INFO] oth - Executing (default): SELECT `id`, `open_number`, `open_created`, `open_type`, `open_term`, `open_params`, `created` FROM `open_jackpot` AS `open_jackpot` WHERE `open_jackpot`.`id` = '716';
+[2018-12-03T13:57:17.063] [INFO] oth - Executing (default): SELECT  * from  user as  u left join subscribe as sub   on sub.user_id =u.user_id WHERE u.openid = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI'
+[2018-12-03T13:57:17.117] [INFO] oth - Executing (default): SELECT `id`, `open_number`, `open_created`, `open_type`, `open_term`, `open_params`, `created` FROM `open_jackpot` AS `open_jackpot` WHERE `open_jackpot`.`id` = '716';
+[2018-12-03T15:36:37.670] [INFO] oth - Executing (default): SELECT `user_id`, `openid`, `nickname`, `headimg`, `params`, `created_at` FROM `user` AS `user` WHERE `user`.`openid` = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI' LIMIT 1;
+[2018-12-03T15:36:37.674] [INFO] oth - Executing (default): SELECT `user_id` AS `id`, `user_id`, `params`, `created_at`, `update_at` FROM `subscribe` AS `subscribe` WHERE `subscribe`.`user_id` = 3 LIMIT 1;
+[2018-12-03T15:36:37.683] [INFO] oth - Executing (default): INSERT INTO `subscribe` (`user_id`,`params`,`created_at`,`update_at`) VALUES (3,'3','1543822597','1543822597');
+[2018-12-03T15:36:45.400] [INFO] oth - Executing (default): SELECT `user_id`, `openid`, `nickname`, `headimg`, `params`, `created_at` FROM `user` AS `user` WHERE `user`.`openid` = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI' LIMIT 1;
+[2018-12-03T15:36:45.403] [INFO] oth - Executing (default): SELECT `user_id` AS `id`, `user_id`, `params`, `created_at`, `update_at` FROM `subscribe` AS `subscribe` WHERE `subscribe`.`user_id` = 3 LIMIT 1;
+[2018-12-03T15:42:02.250] [INFO] oth - Executing (default): SELECT  * from  user as  u left join subscribe as sub   on sub.user_id =u.user_id WHERE u.openid = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI'
+[2018-12-03T15:42:02.294] [INFO] oth - Executing (default): SELECT `id`, `open_number`, `open_created`, `open_type`, `open_term`, `open_params`, `created` FROM `open_jackpot` AS `open_jackpot` WHERE `open_jackpot`.`id` = '716';
+[2018-12-03T15:42:14.400] [INFO] oth - Executing (default): SELECT  * from  user as  u left join subscribe as sub   on sub.user_id =u.user_id WHERE u.openid = 'oJZIP0QJhzr54VX0HvhTAnwJA7WI'
+[2018-12-03T15:42:14.440] [INFO] oth - Executing (default): SELECT `id`, `open_number`, `open_created`, `open_type`, `open_term`, `open_params`, `created` FROM `open_jackpot` AS `open_jackpot` WHERE `open_jackpot`.`id` = '716';

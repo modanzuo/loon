@@ -1,7 +1,11 @@
 import * as Express from 'express';
 import {CODE} from "../config/code"
+import {Res} from "loon";
+import * as  log from '../config/log'
 
-export class ApiController {
+export default class ApiController {
+    public log = log
+
     public success(res: Express.Response, data: any, code: number = CODE.SUCCESS): void {
         res.send({
             code,

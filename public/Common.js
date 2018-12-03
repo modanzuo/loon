@@ -1,10 +1,26 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const moment = require("moment");
-const mySql = require('../db/mySql');
+const crypto = require("crypto");
+const sequelize_1 = require("../db/sequelize");
+const log = require("../config/log");
+const code_1 = require("../config/code");
 class Common {
     constructor() {
-        this.mySql = mySql;
+        this.sequelize = sequelize_1.sequelize;
+        this.log = log;
+        this.CODE = code_1.CODE;
+    }
+    base64Encode(str) {
+        return new Buffer(str).toString('base64');
+    }
+    base64Decode(str) {
+        return new Buffer(str, 'base64').toString();
+    }
+    getMd5(str) {
+        const md5 = crypto.createHash('md5');
+        str = md5.update(str).digest('hex');
+        return str;
     }
     getClientIp(req) {
         let ipAddress;
@@ -25,10 +41,13 @@ class Common {
         }
         return userAgent;
     }
-    getTimeStamp(str = '') {
+    getTimeStamp(str = '', format = 'X') {
         let time = moment().format('X');
         if (str) {
-            time = moment(str).format('X');
+            str = str.replace(/年/gi, '-');
+            str = str.replace(/月/gi, '-');
+            str = str.replace(/日/gi, '');
+            time = moment(new Date(str)).format(format);
         }
         return String(time);
     }

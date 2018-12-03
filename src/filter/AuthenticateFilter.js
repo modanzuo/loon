@@ -15,10 +15,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const loon_1 = require("loon");
 const Express = require("express");
 const code_1 = require("../../config/code");
+const token_1 = require("../../public/token");
 let AuthenticateFilter = class AuthenticateFilter {
     use(data, res, next, token) {
-        data.token = token;
-        if (token) {
+        if (token_1.checkToken(token)) {
+            const payload = token_1.decodeToken(token).payload;
+            data.user = payload.data;
             next();
         }
         else {
@@ -27,7 +29,7 @@ let AuthenticateFilter = class AuthenticateFilter {
     }
 };
 __decorate([
-    __param(0, loon_1.Data()), __param(1, loon_1.Res()), __param(2, loon_1.Next()), __param(3, loon_1.CookieParam('XSession')),
+    __param(0, loon_1.Data()), __param(1, loon_1.Res()), __param(2, loon_1.Next()), __param(3, loon_1.HeaderParam('xcx-token')),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Object, Object, Function, String]),
     __metadata("design:returntype", void 0)

@@ -10,12 +10,19 @@
     "dev:tsc": "tsc -w -p ."
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "config": "^3.0.0",
+    "crypto": "^1.0.1",
+    "html-entities": "^1.2.1",
+    "iconv-lite": "^0.4.24",
     "jsonwebtoken": "^8.3.0",
     "lodash": "^4.17.4",
+    "log4js": "^3.0.6",
     "loon": "^1.1.2",
     "loon-data": "^0.2.0",
     "moment": "^2.18.1",
     "mysql2": "^1.6.1",
+    "node-fetch": "^2.3.0",
     "sequelize": "^4.39.0",
     "winston": "^2.3.1"
   },
